@@ -13,7 +13,7 @@ export function Search(props) {
             className="dmk-select-options-search"
             type="text"
             value={value}
-            placeholder="Search options..."
+            placeholder="Search for options..."
             autoFocus
             onChange={onChangeQuery} />
     );
