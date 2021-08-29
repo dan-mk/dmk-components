@@ -1,0 +1,74 @@
+.dmk-select * {
+    box-sizing: border-box;
+}
+
+.dmk-select {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.dmk-select-display-container {
+    position: relative;
+    user-select: none;
+}
+
+.dmk-select-display {
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+
+.dmk-select-display::after {
+    content: "";
+    border: 6px solid transparent;
+    border-top-color: black;
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 3px);
+}
+
+.dmk-select-display-open-options {
+    border-color: gray;
+    border-radius: 5px 5px 0 0;
+}
+
+.dmk-select-options-container {
+    background: #f0f0f0;
+    border: 2px solid gray;
+    border-top: 0;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    left: 0;
+    top: calc(100% - 1px);
+    width: 100%;
+}
+
+.dmk-select-options-search {
+    border: 0;
+    font-size: 15px;
+    padding: 6px 10px;
+    width: 100%;
+}
+
+.dmk-select-options-search:focus {
+    outline: 0;
+}
+
+.dmk-select-options-list-container {
+    margin: 0;
+    overflow: auto;
+    padding: 4px 0;
+    max-height: 150px;
+}
+
+.dmk-select-options-list-container li {
+    font-size: 15px;
+    list-style: none;
+    padding: 4px 10px;
+}
+
+.dmk-select-options-list-container li:hover {
+    background: #e6e6e6;
+    cursor: pointer;
+}
